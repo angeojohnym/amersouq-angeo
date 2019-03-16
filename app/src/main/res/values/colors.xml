@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F86D13</color>
+    <color name="colorPrimaryDark">#fd223f</color>
+    <color name="colorPrimaryDarkTransparent">#C8FD223F</color>
+    <color name="colorAccent">#F86D13</color>
+    <color name="gradientLightOrange">#fc8a40</color>
+    <color name="gradientLightOrangeTransparent">#C8FC8A40</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent_white">#AEF0F0F0</color>
+    <color name="transparent">#00000000</color>
+    <color name="page_background">#33d3d3d3</color>
+    <color name="dark_grey">#666666</color>
+    <color name="grey">#c4c3c3</color>
+    <color name="d_grey">#424141</color>
+    <color name="unselectedIconColor">#d3d3d3</color>
+    <color name="search_background">#fb8485</color>
+
+    <color name="colorPrimaryShadeOne">#da5f10</color>
+    <color name="colorPrimaryShadeTwo">#d24e15</color>
+    <color name="text_blue_color">#3288de</color>
+    <color name="dark_red">#a6060e</color>
+    <color name="green_color">#0fa93b</color>
+    <color name="vlight_grey">#e6e3e3</color>
+</resources>

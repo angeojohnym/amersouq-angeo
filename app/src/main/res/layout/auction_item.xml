@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/full_layout"
+
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/_80sdp"
+        android:src="@drawable/candy_crush_inapp_purchase"
+        android:padding="@dimen/_3sdp"
+        android:id="@+id/img_view"
+        android:background="@drawable/bg_stroke_curved"
+        android:layout_height="@dimen/_80sdp" />
+
+</LinearLayout>

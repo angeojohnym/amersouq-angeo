@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/name_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/person_td"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/name_details" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/person_td"
+            android:gravity="bottom"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Profile Details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_below="@+id/person_td"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:id="@+id/language_layout"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/choose_imgvw"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/worlwide_language" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/choose_imgvw"
+            android:gravity="bottom"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Choose Your Language"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/choose_imgvw"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout_layout"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/logout_imgvw"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/logout_imgvw"
+            android:gravity="bottom"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Logout"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/logout_imgvw"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+</LinearLayout>

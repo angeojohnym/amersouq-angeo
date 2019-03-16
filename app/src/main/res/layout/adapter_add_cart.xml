@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxWidth="280dp"
+        android:maxLines="1"
+        android:text="Redmi Note 6 pro(black, 64 GB)"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#9E9E9E"
+        android:ellipsize="end"
+        android:maxWidth="250dp"
+        android:maxLines="1"
+        android:text="Seller: Thomson Group"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductDiscription" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="$123"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSeller" />
+
+    <TextView
+        android:id="@+id/textViewOrginalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="$334"
+        android:textSize="14sp"
+        android:textColor="#9E9E9E"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPrice"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrice"
+        app:layout_constraintTop_toTopOf="@+id/textViewPrice" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOrginalPrice"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOrginalPrice"
+        app:layout_constraintStart_toStartOf="@+id/textViewOrginalPrice"
+        app:layout_constraintTop_toTopOf="@+id/textViewOrginalPrice" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="82% off"
+        android:textColor="#1E770C"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textViewProductDiscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxWidth="250dp"
+        android:visibility="gone"
+        android:maxLines="1"
+        android:text="5 GB RAM"
+        android:textColor="#9E9E9E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductName" />
+
+    <TextView
+        android:id="@+id/textViewOfferAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#9E9E9E"
+        android:text="2 Offers Available"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="#9E9E9E"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="Delivery in 2 Days,  Sat | Free"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOfferAvailable" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/red_border"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+        <ImageView
+            android:id="@+id/textViewCountMinus"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_minus_"
+            android:tint="#A80B0B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="40dp"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="#A80B0B"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCountPlus"
+            app:layout_constraintStart_toEndOf="@+id/textViewCountMinus"
+            app:layout_constraintTop_toTopOf="@+id/textViewCountMinus" />
+
+        <ImageView
+            android:id="@+id/textViewCountPlus"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_plus_"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:tint="#A80B0B"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewCount"
+            app:layout_constraintTop_toTopOf="@+id/textViewCount" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/gray_border"
+        android:paddingStart="4dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Remove"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+</android.support.constraint.ConstraintLayout>

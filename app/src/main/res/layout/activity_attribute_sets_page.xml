@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shopping.techxform.amersouq.activities.attribure_add.AttributeSetsPage">
+
+    <TextView
+        android:id="@+id/cat_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/attribute_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cat_title" />
+
+    <Button
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/button_effect_theme"
+        android:text="ADD NEW ATTRIBUTE"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/add_attribute"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/add_icon" />
+</RelativeLayout>

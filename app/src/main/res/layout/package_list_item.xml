@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/bg_grey_orange_curved"
+    android:elevation="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/bg_white_bottom_curved">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sub_btn"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="starter"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="$"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:gravity="bottom"
+                    android:text="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_30ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="bottom"
+                    android:text="/month"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="Save $0 per month"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:gravity="bottom"
+                        android:src="@drawable/tick_package"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="bottom"
+                        android:text="Advertisement"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_15sdp"
+                        android:text="10"
+                        android:textColor="@color/main_blue_color"
+
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="bottom"
+                        android:text="Featured Advertisement"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_15sdp"
+                        android:text="5"
+                        android:textColor="@color/main_blue_color"
+
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="bottom"
+                        android:text="Boosted Advertisement"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_15sdp"
+                        android:text="3"
+                        android:textColor="@color/main_blue_color"
+
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="bottom"
+                        android:text="Home Page Live Auction"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:gravity="bottom"
+                        android:src="@drawable/cross_package"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="bottom"
+                        android:text="Vendor Profile"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_15sdp"
+                        android:text="5"
+                        android:textColor="@color/main_blue_color"
+
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="bottom"
+                        android:text="Create Auction"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sub_btn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/button_effect_theme"
+            android:text="submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+</RelativeLayout>

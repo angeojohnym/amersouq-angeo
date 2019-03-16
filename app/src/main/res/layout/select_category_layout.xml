@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Category"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Please select a listing type and category for your listing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/motors_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="Motors"
+                    android:textSize="@dimen/_8ssp" />
+
+                <RadioButton
+                    android:id="@+id/property_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Property"
+                    android:buttonTint="@color/black"
+
+                    android:textSize="@dimen/_8ssp" />
+
+                <RadioButton
+                    android:id="@+id/jobs_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jobs"
+                    android:buttonTint="@color/black"
+
+                    android:textSize="@dimen/_8ssp" />
+
+                <RadioButton
+                    android:id="@+id/for_sale_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Sale"
+                    android:buttonTint="@color/black"
+
+                    android:textSize="@dimen/_8ssp" />
+
+                <RadioButton
+                    android:id="@+id/services_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:buttonTint="@color/black"
+
+                    android:textSize="@dimen/_8ssp" />
+            </RadioGroup>
+
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="@dimen/_200sdp"-->
+            <!--android:layout_height="@dimen/_200sdp"-->
+            <!--android:layout_marginTop="@dimen/_10sdp"-->
+            <!--android:background="@drawable/stroke_edittext_bg"-->
+            <!--android:padding="@dimen/_5sdp"-->
+            <!--android:scrollbars="vertical" />-->
+
+            <LinearLayout
+                android:id="@+id/root_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/select_cat_btn"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/button_effect_theme"
+                android:gravity="center"
+                android:text="Select Category"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

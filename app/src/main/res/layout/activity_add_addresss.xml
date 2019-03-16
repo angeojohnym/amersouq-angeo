@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgm"
+    tools:context=".activities.AddressBook.AddAddresss">
+
+    <TextView
+        android:id="@+id/title_td"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Add New Address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_td"
+        android:layout_marginBottom="@dimen/_40sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_city"
+
+                android:layout_width="@dimen/_240sdp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:hintEnabled="true"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_city"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Street"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_12sdp"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_state"
+
+                android:layout_width="@dimen/_240sdp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:hintEnabled="true"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_state"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_12sdp"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_pincode"
+
+                android:layout_width="@dimen/_240sdp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:hintEnabled="true"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_pincode"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Zipcode"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_12sdp"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_landmark"
+
+                android:layout_width="@dimen/_240sdp"
+                app:hintAnimationEnabled="true"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:hintEnabled="true"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_landmark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Landmark"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_12sdp"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:text="Set Default"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"
+                android:layout_height="@dimen/_30sdp" />
+
+            <Button
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:text="SUBMIT"
+                android:background="@drawable/button_effect_theme"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/full_layout"
+    android:layout_marginBottom="@dimen/_3sdp"
+    app:layout_goneMarginBottom="@dimen/_2sdp"
+    android:background="#e2e2e2"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pdct_imgvw"
+        android:layout_width="@dimen/_60sdp"
+        android:background="@drawable/bg_white_circular"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/laptop_image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_12ssp"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/_5sdp"
+        android:text="Pious ordered Mango Falooda"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/pdct_imgvw"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

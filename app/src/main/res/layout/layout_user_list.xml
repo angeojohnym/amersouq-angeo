@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/iv_profile_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/immaculine"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#8BC34A"
+        app:civ_shadow_radius="10"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile_img"
+        app:layout_constraintTop_toTopOf="@+id/iv_profile_img" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_profile_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

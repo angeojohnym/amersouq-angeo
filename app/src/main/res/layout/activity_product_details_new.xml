@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.ProductList.ProductListActivityNew">
+
+    <include layout="@layout/toolbar_search" />
+    <ScrollView
+        android:id="@+id/sv_product_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="@dimen/_10sdp">
+           <TextView
+               android:id="@+id/tv_item_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Lois Caron"
+               android:layout_marginTop="4dp"
+               android:textColor="@color/text_blue_color"
+               android:textSize="@dimen/tv_pd_item_name"/>
+           <TextView
+               android:id="@+id/tv_item_description"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp"
+               android:text="@string/lois_caron_lcs_8075_blue_dial_day_date_functioning_watch"
+               android:textColor="@color/black" />
+           <TextView
+               android:id="@+id/tv_item_detail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp"
+               android:text="for men"
+               android:textColor="@color/black"
+               android:textSize="@dimen/adapter_text_small"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+             android:layout_gravity="end"
+             android:gravity="end">
+             <ImageView
+                 android:id="@+id/imageView"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@android:drawable/ic_menu_share"/>
+         </LinearLayout>
+
+           <android.support.v4.view.ViewPager
+               xmlns:android="http://schemas.android.com/apk/res/android"
+               android:id="@+id/viewpager"
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/iv_product_detail_height"
+               android:layout_marginTop="8dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/tv_item_detail" />
+
+           <RelativeLayout
+               android:id="@+id/viewPagerIndicator"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_alignParentBottom="true"
+               android:gravity="center"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/viewpager">
+
+               <LinearLayout
+                   android:id="@+id/viewPagerCountDots"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_centerHorizontal="true"
+                   android:gravity="center"
+                   android:orientation="horizontal" />
+
+           </RelativeLayout>
+
+           <android.support.constraint.ConstraintLayout
+               android:id="@+id/parent"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+
+               <android.support.constraint.ConstraintLayout
+                   android:id="@+id/cl_other_details"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintEnd_toStartOf="@+id/cl_other_details2"
+                   app:layout_constraintHorizontal_bias="0.5"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent">
+
+                   <TextView
+                       android:id="@+id/tv_price"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginTop="8dp"
+                       android:gravity="end"
+                       android:text="@string/mrp"
+                       android:textColor="@android:color/black"
+                       app:layout_constraintEnd_toStartOf="@+id/et_amount"
+                       app:layout_constraintHorizontal_bias="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <TextView
+                       android:id="@+id/et_amount"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginEnd="4dp"
+                       android:gravity="start"
+                       android:text=""
+                       android:textColor="@color/black"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.5"
+                       app:layout_constraintStart_toEndOf="@+id/tv_price"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <TextView
+                       android:id="@+id/tv_deal_price"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginTop="8dp"
+                       android:gravity="end"
+                       android:text="@string/deal_price"
+                       android:textColor="@android:color/black"
+                       app:layout_constraintEnd_toStartOf="@+id/et_deal_amount"
+                       app:layout_constraintHorizontal_bias="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+                   <TextView
+                       android:id="@+id/et_deal_amount"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginEnd="4dp"
+                       android:gravity="start"
+                       android:text=""
+                       android:textColor="@color/colorPrimaryShadeTwo"
+                       android:textSize="16sp"
+                       android:textStyle="bold"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.5"
+                       app:layout_constraintStart_toEndOf="@+id/tv_deal_price"
+                       app:layout_constraintTop_toBottomOf="@+id/et_amount" />
+
+                   <TextView
+                       android:id="@+id/tv_save_price"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginBottom="8dp"
+                       android:gravity="end"
+                       android:text="@string/save_amnt"
+                       android:textColor="@android:color/black"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toStartOf="@+id/et_save_amount"
+                       app:layout_constraintHorizontal_bias="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/tv_deal_price" />
+
+                   <TextView
+                       android:id="@+id/et_save_amount"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginEnd="4dp"
+                       android:layout_marginBottom="8dp"
+                       android:gravity="start"
+                       android:text=""
+                       android:textColor="@color/colorPrimaryShadeTwo"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.5"
+                       app:layout_constraintStart_toEndOf="@+id/tv_save_price"
+                       app:layout_constraintTop_toBottomOf="@+id/et_deal_amount" />
+
+               </android.support.constraint.ConstraintLayout>
+
+               <android.support.constraint.ConstraintLayout
+                   android:id="@+id/cl_other_details2"
+                   android:layout_width="0dp"
+                   android:layout_height="87dp"
+                   android:layout_marginEnd="8dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.5"
+                   app:layout_constraintStart_toEndOf="@+id/cl_other_details"
+                   app:layout_constraintTop_toTopOf="parent">
+
+                   <TextView
+                       android:id="@+id/tv_qty"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:layout_marginBottom="8dp"
+                       android:gravity="end"
+                       android:text="@string/available_qty"
+                       app:layout_constraintBottom_toBottomOf="@+id/et_qty"
+                       app:layout_constraintEnd_toStartOf="@+id/et_qty"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="@+id/et_qty" />
+
+                   <TextView
+                       android:id="@+id/et_qty"
+                       android:layout_width="@dimen/_120sdp"
+                       android:layout_height="30dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:gravity="center"
+                       android:padding="4dp"
+                       android:text="Quantity required"
+                       android:textColor="@android:color/black"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:id="@+id/quantity__layout"
+                       android:layout_width="@dimen/_120sdp"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:gravity="center"
+                       android:orientation="horizontal"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/et_qty">
+
+                       <ImageButton
+                           android:id="@+id/quantity_minus"
+                           android:layout_width="30dp"
+                           android:layout_height="30dp"
+                           android:background="@drawable/ic_minus" />
+
+                       <TextView
+                           android:id="@+id/quantity"
+                           android:layout_width="20dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="4dp"
+                           android:gravity="center_horizontal|center_vertical"
+                           android:text="0"
+                           android:textColor="@color/black" />
+
+                       <ImageButton
+                           android:id="@+id/add_quantity"
+                           android:layout_width="30dp"
+                           android:layout_height="30dp"
+                           android:layout_marginStart="4dp"
+                           android:background="@drawable/ic_plus" />
+                   </LinearLayout>
+
+                   <TextView
+                       android:id="@+id/textView10"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginEnd="8dp"
+                       android:gravity="end"
+                       android:text="@string/quantity"
+                       app:layout_constraintBottom_toBottomOf="@+id/quantity__layout"
+                       app:layout_constraintEnd_toStartOf="@+id/quantity__layout"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="@+id/quantity__layout" />
+
+               </android.support.constraint.ConstraintLayout>
+
+           </android.support.constraint.ConstraintLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginStart="@dimen/_50sdp"
+               android:layout_marginEnd="@dimen/_50sdp"
+               android:layout_marginTop="@dimen/_10sdp">
+               <TextView
+                   android:id="@+id/add_to_cart"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginEnd="8dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="16dp"
+                   android:background="@drawable/button_effect_theme"
+                   android:gravity="center"
+                   android:text="@string/add_to_cart"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/_12ssp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/btn_buy_now"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginEnd="8dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="16dp"
+                   android:background="@drawable/button_effect_theme"
+                   android:gravity="center"
+                   android:text="@string/buy_now"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/_12ssp"
+                   android:textStyle="bold" />
+           </LinearLayout>
+       </LinearLayout>
+    </ScrollView>
+</LinearLayout>

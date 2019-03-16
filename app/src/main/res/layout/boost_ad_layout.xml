@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_280sdp"
+    android:background="@drawable/bgm_small"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="Boost Advertisement"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="Set Budget"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:hint="Enter in KWD"
+        android:textSize="@dimen/_10ssp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="From Date and Time"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/from_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/from_date"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:focusable="false"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_grey_stroke"
+            android:drawableEnd="@drawable/calender_icon"
+            android:inputType="none"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp" />
+
+        <EditText
+            android:id="@+id/from_time"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/bg_grey_stroke"
+            android:drawableEnd="@drawable/clock_icon"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="To Date and Time"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/to_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/to_date"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_grey_stroke"
+            android:drawableEnd="@drawable/calender_icon"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp" />
+
+        <EditText
+            android:id="@+id/to_time"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/bg_grey_stroke"
+            android:drawableEnd="@drawable/clock_icon"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nxt_btn"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/button_effect_theme"
+        android:gravity="center"
+        android:text="Set Boost"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

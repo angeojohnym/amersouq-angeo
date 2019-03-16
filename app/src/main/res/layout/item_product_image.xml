@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:id="@+id/full_layout"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:src="@drawable/placeholder"
+        android:padding="@dimen/_3sdp"
+        android:id="@+id/img_view"
+        android:background="@drawable/bg_small_stroke_images"
+        android:layout_height="@dimen/_40sdp" />
+
+</LinearLayout>

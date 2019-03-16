@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top_lay"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/attribute_name_td"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="sdfsdfsdfdf\n\nszfsdfdsfsdfdsfdsffsf"
+        android:layout_toStartOf="@+id/attributes_type"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:id="@+id/attributes_type"
+        android:layout_width="wrap_content"
+        tools:text="gdfgdfgfdgfgfgfdgdfgfd"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/root_layout"
+        android:layout_below="@+id/top_lay"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/add_option"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:text="Add Option"
+        android:textSize="@dimen/_8ssp"
+        android:layout_below="@+id/root_layout"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/black"
+        android:layout_below="@+id/add_option"/>
+
+</RelativeLayout>

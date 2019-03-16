@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_begin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    android:background="@drawable/bgm">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/theme_gradient">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Rakesh P Ramadas"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active since : Nov '18"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/person_pic_imgvw"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:background="@drawable/bg_circle_orange"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/immaculine" />
+
+
+    <LinearLayout
+        android:id="@+id/followers_layout"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/person_pic_imgvw"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Followers"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/person_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="62"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgm"
+    android:layout_height="match_parent"
+    tools:context="com.shopping.techxform.amersouq.activities.Intro.PaymentMethods">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:id="@+id/add_card_lay"
+        android:background="@drawable/bg_grey_stroke"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+
+            android:background="@drawable/bg_grey_stroke"
+           >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:text="Add card details"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/nxt_icon"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_card_page"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name on card"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card number"
+            android:textColorHint="@color/dark_grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="Expiry date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_grey_stroke"
+                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:hint="MM"
+                />
+            <EditText
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/bg_grey_stroke"
+                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:hint="YY"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Add your card"
+            android:background="@drawable/bg_button_theme_rectangle"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_30sdp" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/cards_list"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@+id/add_card_lay"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

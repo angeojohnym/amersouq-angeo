@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/theme_gradient"
+    android:elevation="0dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:contentInsetStart="0dp"
+    app:paddingEnd="0dp"
+    app:paddingStart="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/tb_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tb_bell_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="@dimen/_5sdp"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/alert_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar_ivNavigation_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/white_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/toolbar_SearchLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_curved_search"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tb_fav_btn"
+            app:layout_constraintStart_toEndOf="@+id/toolbar_ivNavigation_p"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                android:id="@+id/customer_toolbar_search_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_toStartOf="@id/customer_search_icon"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/search_txt_size" />
+
+            <RelativeLayout
+
+                android:id="@+id/customer_search_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/search_icon" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/tb_fav_btn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="8dp"
+            android:elevation="@dimen/_5sdp"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/fav_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tb_bell_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.Toolbar>

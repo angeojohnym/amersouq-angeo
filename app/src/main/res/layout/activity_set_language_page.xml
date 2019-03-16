@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgm"
+   >
+
+    <ImageView
+        android:id="@+id/logo_imgvw"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_imgvw"
+        android:gravity="center_horizontal"
+        android:text="@string/select_language"
+        android:id="@+id/logo_txt"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_26sdp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo_txt"
+        android:layout_margin="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="@dimen/_250sdp">
+
+
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:id="@+id/sticky_switch"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_120sdp"
+            app:ss_animationDuration="600"
+            app:ss_iconSize="@dimen/_50sdp"
+            app:ss_iconPadding="@dimen/_10sdp"
+            app:ss_leftIcon="@drawable/flag_kuwait_new"
+            app:ss_leftText="@string/arabic"
+            app:ss_rightIcon="@drawable/flag_english"
+            app:ss_rightText="@string/english"
+            app:ss_selectedTextSize="@dimen/_16ssp"
+            app:ss_sliderBackgroundColor="@color/transparent"
+            app:ss_switchColor="@color/colorPrimary"
+            app:ss_textColor="@color/colorPrimary"
+            app:ss_textSize="@dimen/_16ssp"
+            app:ss_animationType="line"/>
+
+
+    </LinearLayout>
+
+  <TextView
+      android:layout_width="@dimen/_220sdp"
+      android:textSize="@dimen/_16ssp"
+      android:textColor="@color/white"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:id="@+id/sub_btn"
+      android:text="@string/submit"
+      android:textStyle="bold"
+      android:background="@drawable/button_effect_theme"
+      android:layout_height="@dimen/_35sdp"
+      android:layout_alignParentBottom="true"
+
+      android:layout_margin="@dimen/_20sdp"
+      />
+
+</RelativeLayout>

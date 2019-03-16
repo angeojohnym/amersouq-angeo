@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm"
+    android:gravity="center_horizontal"
+    tools:context="com.shopping.techxform.amersouq.activities.CreateAdvertisement.CreateAdpage">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:id="@+id/title_layout"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_30sdp"
+      android:orientation="horizontal">
+      <View
+          android:layout_width="@dimen/_80sdp"
+          android:layout_height="1dp"
+          android:background="@color/black"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_marginStart="@dimen/_10sdp"
+          android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/black"
+          android:layout_height="wrap_content"
+          android:text="Select Category"/>
+      <View
+          android:layout_width="@dimen/_80sdp"
+          android:layout_height="1dp"
+          android:background="@color/black"
+          />
+  </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/title_layout"
+        android:layout_margin="@dimen/_8sdp"
+
+        android:id="@+id/cat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

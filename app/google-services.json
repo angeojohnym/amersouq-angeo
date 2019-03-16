@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "463908770252",
+    "firebase_url": "https://amer-souq.firebaseio.com",
+    "project_id": "amer-souq",
+    "storage_bucket": "amer-souq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463908770252:android:aeb59bae8e302800",
+        "android_client_info": {
+          "package_name": "com.shopping.techxform.amersouq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463908770252-540ee08bqg7fgplcmcrqih6f5ll433m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxx2ntIdHv3qQA5wqCj7tL8pnyLhaNB1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/bg_theme_circle" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/ic_launcher"
+            android:paddingStart="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:gravity="center">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginBottom="2dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Akhil K ASHOK"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <ImageView
+        android:id="@+id/close_image"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/ic_close_grey"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+</LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/page_background" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

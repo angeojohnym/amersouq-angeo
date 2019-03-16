@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgm"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.shopping.techxform.amersouq.activities.Profile.EditProfilePage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/txt_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18ssp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Profile"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txt_title"
+        android:id="@+id/view_line"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/view_line"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+
+            android:src="@drawable/profile_pic"
+            android:layout_height="@dimen/_200sdp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        android:text="Name"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:hint="Name"
+            android:textColorHint="@color/dark_grey"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_10ssp"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Contact Number"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:hint="Contact Number"
+            android:textColorHint="@color/dark_grey"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_10ssp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Alternate Number"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:hint="Alternate Number"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColorHint="@color/dark_grey"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_10ssp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Address"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:hint="Address"
+            android:minLines="3"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColorHint="@color/dark_grey"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_10ssp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Location"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:hint="Location"
+            android:drawableEnd="@drawable/drop_down_icon"
+            android:textColorHint="@color/dark_grey"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_10ssp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Gender"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_height="wrap_content">
+           
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:buttonTint="@color/colorPrimary"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:text="Male"/>
+
+           <RadioButton
+               android:buttonTint="@color/colorPrimary"
+               android:layout_width="wrap_content"
+               android:layout_marginStart="@dimen/_20sdp"
+               android:layout_height="wrap_content"
+               android:text="Female"/>
+           
+       </RadioGroup>
+
+
+
+        <Button
+            android:layout_width="@dimen/_160sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_effect_theme"
+            android:layout_gravity="center_horizontal"
+            android:text="submit"
+            android:textSize="@dimen/_12ssp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

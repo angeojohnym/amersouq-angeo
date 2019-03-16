@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:elevation="@dimen/_5sdp"
+        android:weightSum="3"
+        android:id="@+id/top_layout"
+        android:background="@color/white"
+        android:layout_height="@dimen/_50sdp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+
+                android:text="Featured"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/sort_black"
+
+                android:layout_height="@dimen/_20sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Sort"
+                android:textSize="@dimen/_11ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/sort_black_icon"
+                android:layout_height="@dimen/_20sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Filter"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/top_layout"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/my_ads_list"
+        android:layout_height="match_parent"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:elevation="@dimen/_5sdp"
+        android:weightSum="3"
+        android:id="@+id/top_layout"
+        android:background="@color/white"
+        android:layout_height="@dimen/_50sdp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/auction_id"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Auction"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:id="@+id/fixed_id"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Fixed Price"
+                android:textSize="@dimen/_11ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:id="@+id/classified_id"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Classifieds"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/top_layout"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/all_ads_list"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/top_layout"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/all_ads_list_auc"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/top_layout"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/all_ads_list_fix"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/top_layout"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/all_ads_list_clas"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

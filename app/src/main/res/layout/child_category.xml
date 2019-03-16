@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="@dimen/_150sdp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_200sdp"
+        android:background="@drawable/bg_grey_stroke"
+        android:layout_height="@dimen/_130sdp">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/cat_list"
+            android:scrollbars="vertical"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_default" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_adtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_adtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="@string/ad_title"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_addesc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_addesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="@string/short_desc"
+                        android:maxLines="1"
+
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner-->
+                <!--android:id="@+id/spinner2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="MaterialBetterSpinner"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textColorHint="@color/black"-->
+                <!--android:textSize="@dimen/_12ssp"-->
+
+                <!--app:met_floatingLabel="normal" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_fulldesc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_fulldesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="@string/ad_fulldesc"
+
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/category"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_underline"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/subcategory_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/sub_category"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_underline"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12ssp" />
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/location_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/location"
+                    android:background="@drawable/bg_underline"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/language_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:text="Choose language"
+                    android:background="@drawable/bg_underline"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12ssp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="Boost Ad "
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorAccent" />
+
+                    <CheckBox
+                        android:id="@+id/boost_ad_checkbox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/visible_to_guest_user"
+                        android:textColor="@color/colorAccent" />
+
+                    <CheckBox
+                        android:id="@+id/visible_to_guest_checkbox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="Featured "
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorAccent" />
+
+                    <CheckBox
+                        android:id="@+id/check_box_feature"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorAccent"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_price"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Price"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_offerprice"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_offerprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Offer Price"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_number"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Contact Number"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_address"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Address"
+
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_condition"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Condition"
+
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_additional_info_layout"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="ADDITIONAL INFORMATION"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/drop_down_icon"
+                    android:tint="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:ael_interpolator="linear"
+                app:ael_orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="18sp"
+                    android:text="Additional Information-test" />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_payment_method_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="PAYMENT METHOD"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/drop_down_icon"
+                    android:tint="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:ael_expanded="false"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:visibility="gone"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:ael_duration="500"
+                app:ael_interpolator="linear"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_cash_on_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_cashOnDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_cashOnDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="4dp"
+                        android:text="Cash on delivery"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_credit_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/layout_cash_on_delivery"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_credit_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_credit_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="4dp"
+                        android:text="Credit card"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_debit_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/layout_credit_card"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_debit_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_debit_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="4dp"
+                        android:text="Debit card"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_debit_card"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="4dp"
+                        android:text="Others"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_shipping_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimaryDark">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="SHIPPING DETAILS"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/drop_down_icon"
+                    android:tint="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/el_shiping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                android:paddingStart="@dimen/_30sdp"
+                android:visibility="gone"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:ael_duration="500"
+                app:ael_interpolator="linear"
+                app:ael_orientation="vertical">
+
+                <include layout="@layout/layout_shipping_details"/>
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:id="@+id/upload_img_btn"
+                android:background="@drawable/bg_curved"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@android:drawable/ic_menu_add"
+                    android:text="Upload image"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/submit_btn"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/button_effect_theme"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

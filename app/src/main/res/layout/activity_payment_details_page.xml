@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm"
+    tools:context="com.shopping.techxform.amersouq.activities.Payment.PaymentDetailsPage">
+
+    <TextView
+        android:id="@+id/title_td"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Payment Details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/payment_list"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_td" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_grey_stroke"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Bajaj Finserv ***656"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/edit_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Varun KH"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Expires 01/2025"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/_10ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_theme_rectangle"
+            android:layout_height="@dimen/_25sdp" />
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Remove"
+            android:textColor="@color/black"
+            android:background="@color/light_grey"
+            android:layout_height="@dimen/_25sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

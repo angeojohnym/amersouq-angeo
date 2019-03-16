@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="@dimen/_250sdp"
+android:background="@drawable/bgm_small"
+android:gravity="center_vertical"
+android:orientation="vertical"
+android:paddingBottom="@dimen/_10sdp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:gravity="center"
+    android:text="Manage Bid"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_14ssp"
+    android:textStyle="bold" />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_25sdp"
+    android:text="Enter your bid"
+    android:textColor="@color/black" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:id="@+id/enter_bid_td"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:hint="Enter in KWD"
+    android:textSize="@dimen/_10ssp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:text="Auto Bid"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/auto_bid_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:trackTint="@color/black" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/bid_layout"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Price Limit"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/pricelimit_td"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:trackTint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:text="Increment"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/increment_td"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:inputType="numberDecimal"
+        android:trackTint="@color/black" />
+</LinearLayout>
+<TextView
+    android:id="@+id/nxt_btn"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_30sdp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/button_effect_theme"
+    android:gravity="center"
+    android:text="Submit"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_14ssp"
+    android:textStyle="bold" />
+
+</LinearLayout>

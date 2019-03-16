@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_default" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_adtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_adtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="@string/ad_title"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_addesc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_addesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="@string/short_desc"
+                        android:maxLines="1"
+
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner-->
+                <!--android:id="@+id/spinner2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="MaterialBetterSpinner"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textColorHint="@color/black"-->
+                <!--android:textSize="@dimen/_12ssp"-->
+
+                <!--app:met_floatingLabel="normal" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_fulldesc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_fulldesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="@string/ad_fulldesc"
+
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_price"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Price"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_offerprice"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_offerprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Offer Price"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_number"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Contact Number"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_address"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Address"
+
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_condition"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/colorAccent"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/input_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+
+                        android:drawableEnd="@drawable/edit_icon"
+                        android:hint="Condition"
+
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/submit_btn"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/button_effect_theme"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

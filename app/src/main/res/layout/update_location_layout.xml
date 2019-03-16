@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgm_small"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="SELECT LOCATION"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@drawable/bg_grey_stroke" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/place_td">
+
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            tools:context="com.sample.sishin.maplocation.MapsActivity" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ripple_marker" />
+
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/locationMarkertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minWidth="@dimen/_100sdp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text=" Set your Location "
+
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageMarker"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/location_icon"
+                android:tint="@color/black" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/place_td"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_above="@+id/update_location"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/bg_grey_stroke"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/curr_location_td"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_above="@+id/update_location"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/bg_grey_stroke"
+        android:drawableEnd="@drawable/current_loc_icon"
+        android:gravity="center"
+        android:paddingEnd="@dimen/_10sdp"
+        android:text="Use Current Location"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/city_td"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary" />
+
+
+    <TextView
+        android:id="@+id/update_location"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/button_effect_theme"
+        android:gravity="center"
+        android:text="Update Location"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/select_lati_td"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:id="@+id/select_longi_td"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

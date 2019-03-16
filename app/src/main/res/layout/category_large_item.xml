@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/_10sdp"
+    android:orientation="vertical"
+   android:layout_margin="@dimen/_5sdp"
+
+    android:background="@drawable/orange_stroke_bg"
+    android:gravity="center"
+    android:id="@+id/full_layout"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/_130sdp"
+        android:src="@drawable/smartphone"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/img_view"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:layout_height="@dimen/_100sdp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:paddingBottom="@dimen/_7sdp"
+        android:textColor="@color/black"
+        android:id="@+id/cat_text_name"
+        android:text="Appliances"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
